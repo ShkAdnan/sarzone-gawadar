@@ -114,7 +114,7 @@
 
                 </section>
 
-                <section class="layout_padding section ">
+            <section class="layout_padding section ">
 
                     <div class="container-fluid">
 
@@ -127,90 +127,27 @@
                                     <h1 class="text-style">Our Success Stories</h1>
                                 </div>
                             </div>
+                            {{-- <h1>Pending</h1>    --}}
                             <div id="carouselExampleIndicators" class="carousel slide py-3" data-ride="carousel">
-                                <ol class="carousel-indicators">
+                                {{-- <ol class="carousel-indicators">
                                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active bg-info py-2 rounded-circle"></li>
                                   <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-info py-2 rounded-circle"></li>
                                   <li data-target="#carouselExampleIndicators" data-slide-to="2" class="bg-info py-2 rounded-circle"></li>
-                                </ol>
+                                </ol> --}}
                                 <div class="carousel-inner">
-                                  <div class="carousel-item active">
-                                    <div class="full text_align_center">
-
-                                        <picture>
-                                            <img style="box-shadow: 2px 2px 10px rgb(5, 5, 5)"
-                                                sizes="(max-width: 1280px) 100vw, 1280px"
-                                                srcset="
-                                                 front/images/posotion-img/success_stories_2021_hjmj5y_c_scale,w_200.jpg 200w,
-                                                 front/images/posotion-img/success_stories_2021_hjmj5y_c_scale,w_313.jpg 313w,
-                                                 front/images/posotion-img/success_stories_2021_hjmj5y_c_scale,w_412.jpg 412w,
-                                                 front/images/posotion-img/success_stories_2021_hjmj5y_c_scale,w_516.jpg 516w,
-                                                 front/images/posotion-img/success_stories_2021_hjmj5y_c_scale,w_617.jpg 617w,
-                                                 front/images/posotion-img/success_stories_2021_hjmj5y_c_scale,w_719.jpg 719w,
-                                                 front/images/posotion-img/success_stories_2021_hjmj5y_c_scale,w_888.jpg 888w,
-                                                 front/images/posotion-img/success_stories_2021_hjmj5y_c_scale,w_1190.jpg 1190w,
-                                                 front/images/posotion-img/success_stories_2021_hjmj5y_c_scale,w_1143.jpg 1143w,
-                                                 front/images/posotion-img/success_stories_2021_hjmj5y_c_scale,w_1280.jpg 1280w"
-                                                src=" front/images/posotion-img/success_stories_2021_hjmj5y_c_scale,w_1280.jpg"
-                                                alt="front/images/Position image" class="position-img">
-                                        </picture>
-                                      
-                                        <h4 class="mt-4"><span class="theme_color_text">
-                                                Achievements</span><br><small><b>Results</b></small></h4>
-    
+                                  <div class="col-lg-10 col-md-10 col-sm-10 col-12 ">
+                                    @foreach($stories as $slider)
+                                    <div class="carousel-item @if($loop->first) active @endif">
+                                        <div class="slider-image text-center">
+                                            <img src="{{ asset('upload/images/' . $slider->stories_images) }}" class="d-inline-block border text-center rounded" alt="{{ $slider->image }}" height="100%" width="600px">
+                                        </div>
+                                        <h4 class="mt-4 text-center"><span class="theme_color_text">{{$slider->name}}<br><small>{{$slider->category}}</small></h4>
+                                            <p>{{$slider->discription}}</p>
                                     </div>
-    
-                                    <div class="full text_align_center" style="text-align:justify">
-    
-                                        <p>Bright Stars of Gwadar institute of technology has once again proved their talent and
-                                            capabilities by securing first three positions in Balochistan Board of Intermediate
-                                            and Secondary Education, Quetta in annual seesion 2020 .</p>
-    
-                                    </div>  </div>
-                                  <div class="carousel-item">
-                                    <div class="full text_align_center">
-
-                                        <iframe width="100%" height="315" style="border-radius: 10px;"
-                                            src="https://www.youtube.com/embed/s7LEWhECT7s" title="YouTube video player"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen></iframe>
-    
-                                        <h4 class="mt-4"><span class="theme_color_text">Mr Asad Sewa
-                                                Khan</span><br><small>Student</small></h4>
-    
-                                    </div>
-    
-                                    <div class="full text_align_center">
-    
-                                        <p>Mr. Asad Sewa Khan , resident of Dera Bugti Balochistan . He has recently
-                                            done the Electrician Course at Gwadar institute of technology . Now after
-                                            the course he aims to open the shop at his native Town where he can earn
-                                            his bread and respect by his work as honourable citizen of pakistan.</p>
-    
-                                    </div>    </div>
-                                  <div class="carousel-item">
-                                    <div class="full text_align_center">
-
-                                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/2tYNv_W4Wvk"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen></iframe>
-    
-                                        <h4 class="mt-4"><span class="theme_color_text">Ms
-                                                Fahmida</span><br><small>Student</small></h4>
-    
-                                    </div>
-    
-                                    <div class="full text_align_center">
-    
-                                        <p>Ms. Fahmida , resident of katti Door Gwadar, Balochistan . She has recently
-                                            done the Computer application course at Gwadar institute of technology .
-                                            Now after the course she aims to work on Free Lancing at her home town
-                                            Gwadar where she can earn her bread and respect by her work.</p>
-    
-                                    </div>
-                                    </div>
+                                   
+                                @endforeach
+                                  
+                                  </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -292,7 +229,7 @@
                                             src=" front/images/posotion-img/success_stories_2021_hjmj5y_c_scale,w_1280.jpg"
                                             alt="front/images/Position image" class="position-img">
                                     </picture>
-                                  
+
                                     <h4 class="mt-4"><span class="theme_color_text">
                                             Achievements</span><br><small><b>Results</b></small></h4>
 
@@ -324,8 +261,7 @@
                     </div> --}}
                 </section>
 
-                <!-- end section -->
-
+               
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-10 mx-auto mt-2"

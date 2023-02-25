@@ -85,24 +85,24 @@ class frontAdmissionController extends Controller
             'matricTotalMarks'=> 'required',
             'matricObtainedMarks'=> 'required',
             'matricPercentage'=> 'required',
-            'interBoard'=> 'required',
-            'interRollNo'=> 'required',
-            'interPassingYear'=> 'required',
-            'interTotalMarks'=> 'required',
-            'interObtainedMarks'=> 'required',
-            'interPercentage'=> 'required',
+            // 'interBoard'=> 'required',
+            // 'interRollNo'=> 'required',
+            // 'interPassingYear'=> 'required',
+            // 'interTotalMarks'=> 'required',
+            // 'interObtainedMarks'=> 'required',
+            // 'interPercentage'=> 'required',
             'matricEnglish'=> 'required | numeric',
             'matricMath'=> 'required | numeric',
             'matricPhysics'=> 'required | numeric',
             'matricChemistry'=> 'required | numeric',
             'matricScienceSubObtainedMarks'=> 'required | numeric',
             'matricScienceSubTotalMarks'=> 'required | numeric',
-            'interEnglish'=> 'required',
-            'interMath'=> 'required',
-            'interPhysics'=> 'required',
-            'interChemistry'=> 'required',
-            'interScienceSubObtainedMarks'=> 'required',
-            'interScienceSubTotalMarks'=> 'required',
+            // 'interEnglish'=> 'required',
+            // 'interMath'=> 'required',
+            // 'interPhysics'=> 'required',
+            // 'interChemistry'=> 'required',
+            // 'interScienceSubObtainedMarks'=> 'required',
+            // 'interScienceSubTotalMarks'=> 'required',
             'matricCertificate'=> 'required | mimes:pdf,jpg,jpeg,doc,docx | max:5124',
             'interCertificate'=> 'required | mimes:pdf,jpg,jpeg,doc,docx | max:5124',
             'domicileImg'=> 'required | mimes:pdf,jpg,jpeg,doc,docx | max:5124'
@@ -207,7 +207,7 @@ class frontAdmissionController extends Controller
         $extension = $image->extension();
         $nameToStore = $filename['filename'] . "_".time().".".$extension;
         //Move to folder
-        $path = $image->move('public/storage/upload/Information/' ,$nameToStore);
+        $path = $image->move('upload/Information/' ,$nameToStore);
         return $nameToStore;
 
     }

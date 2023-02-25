@@ -63,6 +63,16 @@ Route::group(['middleware' => 'userCheck','prefix'=>'notice'],function(){
     Route::post('/online',[noticeController::class,'online'])->name('notice.online');
 });
 
+Route::group(['middleware' => 'userCheck','prefix'=>'stories'],function(){
+    Route::get('/',[homeAndBasicController::class,'Stories'])->name('Stories');
+    Route::post('/add',[homeAndBasicController::class,'add'])->name('Stories.add');
+    Route::get('/view',[homeAndBasicController::class,'show'])->name('Stories.view');
+    Route::get('/edit/{id}',[homeAndBasicController::class,'editStories'])->name('Stories.edit');
+    Route::post('/update',[homeAndBasicController::class,'updateStories'])->name('Stories.update');
+    Route::get('/delete/{id}',[homeAndBasicController::class,'delete'])->name('Stories.delete');
+    // Route::post('/online',[noticeController::class,'online'])->name('notice.online');
+});
+
 // APPLIERS ROUTES
 Route::group(['middleware' => 'userCheck','prefix'=>'appliers'],function(){
     Route::get('/show',[applierController::class,'show'])->name('appliers.show');

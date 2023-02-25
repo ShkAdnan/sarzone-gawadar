@@ -162,6 +162,28 @@
 
                 </div>
 
+                <a class="nav-link collapsed my-1" href="#" data-toggle="collapse" data-target="#stories" aria-expanded="false" aria-controls="Notices">
+
+                    <div class="sb-nav-link-icon"><i class="fas fa-flag"></i></div>
+
+                    Success Stories
+
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+
+                </a>
+
+                <div class="collapse pb-5" id="stories" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+
+                    <nav class="sb-sidenav-menu-nested nav">
+
+                        <a class="nav-link" href="{{route('Stories')}}">Add Stories</a>
+
+                        <a class="nav-link" href="{{route('Stories.view')}}">View Storiess</a>
+
+                    </nav>
+
+                </div>
+
 
             </div>
 

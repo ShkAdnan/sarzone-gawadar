@@ -72,15 +72,15 @@
 
                                                     <td>{{ $item->student_id }}</td>
 
-                                                    <td><a href="{{asset('storage/upload/students/'.$item->CV.".pdf" )}}" target="_blank">{{ $item->CV }}</a></td>
+                                                    <td><a target="_blank" href="{{asset('upload/students/'.$item->CV.".pdf" )}}" target="_blank">{{ $item->CV }}</a></td>
 
                                                     <td>{{ $item->student_CNIC }}</td>
 
-                                                    <td><a href="{{asset('storage/upload/Information/'.$item->matric_certificate)}}" download>{{ $item->student_id }} Matric Card</a></td>
+                                                    <td><a target="_blank" href="{{asset('upload/Information/'.$item->matric_certificate)}}" >{{ $item->student_id }} Matric Card</a></td>
                                                     
-                                                    <td><a href="{{asset('storage/upload/Information/'.$item->inter_certificate)}}" download>{{ $item->student_id }} Intermediate Card</a></td>
+                                                    <td><a target="_blank" href="{{asset('upload/Information/'.$item->inter_certificate)}}" >{{ $item->student_id }} Intermediate Card</a></td>
                                                     
-                                                    <td><a href="{{asset('storage/upload/Information/'.$item->student_domicileImg)}}" download>{{ $item->student_id }} Domicile</a></td>
+                                                    <td><a target="_blank" href="{{asset('upload/Information/'.$item->student_domicileImg)}}" >{{ $item->student_id }} Domicile</a></td>
 
                                                     <td>{{ $item->time }}</td>
 

@@ -8,14 +8,16 @@ use App\Models\album;
 use App\Models\job_applier;
 use App\Models\placement;
 use App\Models\notice;
+use App\Models\stories;
 use Illuminate\Http\Request;
 
 class homeAndBasicController extends Controller
 {
     public function Index(){
         $albums=album::latest('album_id')->limit(4)->get();
+        $stories=stories::limit(4)->get();
         $notices=notice::where('notice_online','true')->get();
-        return response()->view('front.index2',['albums'=>$albums,'notices'=>$notices]);
+        return response()->view('front.index2',['albums'=>$albums,'notices'=>$notices,'stories'=>$stories]);
 
     }
     public function aboutIndex(){
@@ -107,6 +109,57 @@ class homeAndBasicController extends Controller
         ]);
         return view('front.requestSent');
     }
+
+    public function Stories(){
+        return view('admin.stories');
+    }
+    public function add(Request $req){
+        stories::create([
+            'name'=>$req->title_name,
+            'category'=>$req->title,
+            'discription'=>$req->description,
+            'stories_images'=>$this->images($req->image),
+            
+        ]);
+        return redirect()->back()->with("status","success");
+    }
+    public function show(){
+        $stories=stories::get();
+        return view('admin.views.view_stories',['stories'=>$stories]);
+    }
+    public function editStories($id){
+        $stories=stories::all()->where('id',$id)->first();
+        return view('admin.edits.adit_stories',['stories'=>$stories]);
+    }
+    public function updateStories(Request $req){
+        
+        if ($req->image) {
+
+            stories::where('id',$req->id)->update([
+                'name'=>$req->title_name,
+                'category'=>$req->title,
+                'discription'=>$req->description,
+                'stories_images'=>$this->images($req->image)
+            ]);
+        } else {
+            stories::where('id',$req->id)->update([
+                'name'=>$req->title_name,
+                'category'=>$req->title,
+                'discription'=>$req->description,
+                // 'stories_images'=>$this->image($req->image)
+            ]);
+        }
+
+
+        return redirect()->route('Stories.view')->with("msg","Album Updated Successfully")->with("status","primary");
+    }
+    public function delete(Request $req,stories $stories)
+    {
+        $stories = stories::find($req->id);
+        $stories->delete();
+        return redirect()->back()->with('message', 'bed Deleted Seccessfuly');
+
+    }
     public function cv($cv){
 
         $filenameWithExt = $cv->getClientOriginalName();
@@ -117,6 +170,19 @@ class homeAndBasicController extends Controller
         $nameToStore = $filename['filename'] . "_".time().".".$extension;
         //Move to folder
         $path = $cv->move('public/upload/CVs/' ,$nameToStore);
+        return $nameToStore;
+
+    }
+    public function images($cv){
+
+        $filenameWithExt = $cv->getClientOriginalName();
+        //get just filename
+        $filename = pathinfo($filenameWithExt);
+        //get just extension
+        $extension = $cv->extension();
+        $nameToStore = $filename['filename'] . "_".time().".".$extension;
+        //Move to folder
+        $path = $cv->move('upload/images/' ,$nameToStore);
         return $nameToStore;
 
     }

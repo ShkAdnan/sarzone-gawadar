@@ -46,14 +46,14 @@ class galleryController extends Controller
     function delete($id){
 
         $album=album::where('album_id',$id)->first();
-        if (Storage::exists('public/upload/GIT_albums/'.$album->album_coverImage)) {
-            Storage::delete('public/upload/GIT_albums/'.$album->album_coverImage);
+        if (Storage::exists('upload/GIT_albums/'.$album->album_coverImage)) {
+            Storage::delete('upload/GIT_albums/'.$album->album_coverImage);
         }
         album::where('album_id',$id)->delete();
         $subImages=albums_subImage::where('album_id',$id)->get('albums_subImages_name');
         foreach ($subImages as $img) {
-            if (Storage::exists('public/upload/GIT_albums/'.$img->albums_subImages_name)) {
-                Storage::delete('public/upload/GIT_albums/'.$img->albums_subImages_name);
+            if (Storage::exists('upload/GIT_albums/'.$img->albums_subImages_name)) {
+                Storage::delete('upload/GIT_albums/'.$img->albums_subImages_name);
             }
         }
         return redirect()->back()->with("msg","Album Deleted Successfully")->with("status","danger");
