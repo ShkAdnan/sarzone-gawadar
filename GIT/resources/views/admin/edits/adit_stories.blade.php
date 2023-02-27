@@ -11,20 +11,20 @@
                 <form class="form" action="{{route('Stories.update',$stories->id)}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <h2>
-                        Update Album
+                        Update Stories
                     </h2>
                     <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="form-group">
-                            <label for="">Album Title</label>
+                            <label for="">Name</label>
                             <input type="text" name="title_name" value="{{ $stories->name }}" id="album_title"
                                 class="form-control" placeholder="" aria-describedby="helpId">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="form-group">
-                            <label for="">Album Title</label>
-                            <input type="text" name="title" value="{{ $stories->name }}" id="album_title"
+                            <label for="">Category Of Picture</label>
+                            <input type="text" name="title" value="{{ $stories->category }}" id="album_title"
                                 class="form-control" placeholder="" aria-describedby="helpId">
                         </div>
                     </div>
@@ -32,7 +32,7 @@
                     <input type="hidden" value="{{ $stories->id }}" name="id">
                     <div class="form-row my-5">
                         <div class="col-lg-6 col-md-6">
-                            <h6>Album Cover Picture</h6>
+                            <h6>Category Of Picture</h6>
                             <img id="preview" src="{{ asset('upload/images/' . $stories->stories_images) }}"
                                 style="border-radius: 20px;height:200px;width:80%;" alt="image not found">
                         </div>

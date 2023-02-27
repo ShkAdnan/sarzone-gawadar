@@ -42,7 +42,7 @@
 
                     <h2>
 
-                        New Album
+                        New Stories
 
                     </h2>
 

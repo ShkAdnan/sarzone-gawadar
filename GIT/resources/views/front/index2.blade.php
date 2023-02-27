@@ -114,7 +114,7 @@
 
                 </section>
 
-            <section class="layout_padding section ">
+                {{-- <section class="layout_padding section ">
 
                     <div class="container-fluid">
 
@@ -127,27 +127,112 @@
                                     <h1 class="text-style">Our Success Stories</h1>
                                 </div>
                             </div>
-                            {{-- <h1>Pending</h1>    --}}
+                           
                             <div id="carouselExampleIndicators" class="carousel slide py-3" data-ride="carousel">
-                                {{-- <ol class="carousel-indicators">
+                                <ol class="carousel-indicators">
                                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active bg-info py-2 rounded-circle"></li>
                                   <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-info py-2 rounded-circle"></li>
                                   <li data-target="#carouselExampleIndicators" data-slide-to="2" class="bg-info py-2 rounded-circle"></li>
-                                </ol> --}}
+                                </ol>
                                 <div class="carousel-inner">
-                                  <div class="col-lg-10 col-md-10 col-sm-10 col-12 ">
+                                 
                                     @foreach($stories as $slider)
                                     <div class="carousel-item @if($loop->first) active @endif">
                                         <div class="slider-image text-center">
                                             <img src="{{ asset('upload/images/' . $slider->stories_images) }}" class="d-inline-block border text-center rounded" alt="{{ $slider->image }}" height="100%" width="600px">
                                         </div>
-                                        <h4 class="mt-4 text-center"><span class="theme_color_text">{{$slider->name}}<br><small>{{$slider->category}}</small></h4>
-                                            <p>{{$slider->discription}}</p>
-                                    </div>
+                                       
+                                            <div class="full text_align_center">
+
+                                        
+
+                                                <h4 class="mt-4"><span class="theme_color_text">
+                                                    {{$slider->name}}</h4>
+        
+                                            </div>
+                                            <div >
+
+                                        
+
+                                                <h4 class="mt-4"><span >
+                                                    {{$slider->category}} </h4>
+        
+                                            </div>
+        
+                                            <div class="full text_align_center" style="text-align:justify">
+        
+                                                <p>{{$slider->discription}}</p>
+        
+                                            </div>  
+                                        </div>
                                    
-                                @endforeach
+                             
+                                    
+                                    @endforeach
+                              
+                               
                                   
-                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                              </div>
+                        
+                        </div>
+
+                    </div>
+
+                </section> --}}
+                <section class="layout_padding section ">
+
+                    <div class="container-fluid">
+
+                        <div class="row">
+
+                            <div class="col-lg-12 text_align_center">
+
+                                <div class="full heading_s1 text-center py-3">
+
+                                    <h1 class="text-style">Our Success Stories</h1>
+                                </div>
+                            </div>
+                            {{-- <h1>Pending</h1> --}}
+                            <div id="carouselExampleIndicators" class="carousel slide py-3" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active bg-info py-2 rounded-circle"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-info py-2 rounded-circle"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="2" class="bg-info py-2 rounded-circle"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    @foreach($stories as $slider)
+                                  <div class="carousel-item  @if($loop->first) active @endif">
+                                    <div class="full text_align_center">
+
+                                        <picture>
+                                            <img style="box-shadow: 2px 2px 10px rgb(5, 5, 5)"
+                                                sizes="(max-width: 1280px) 100vw, 1280px"
+                                                src="{{ asset('upload/images/' . $slider->stories_images) }}" alt="{{ $slider->image }}"
+                                                alt="front/images/Position image" class="position-img">
+                                        </picture>
+
+                                        <h4 class="mt-4"><span class="theme_color_text">
+                                            {{$slider->name}}</span><br><small><b> {{$slider->category}}</b></small></h4>
+
+                                    </div>
+
+                                    <div class="full text_align_center" style="text-align:justify">
+
+                                        <p class="text-center">{{$slider->discription}}</p>
+
+                                    </div>  </div>
+                                 
+                                 
+                                    @endforeach
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -260,7 +345,6 @@
                         </div>
                     </div> --}}
                 </section>
-
                
             </div>
 
@@ -360,11 +444,11 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row justify-content-center">
+    <div class="container mt-5">
+        <div class="row justify-content-center mt-5 ">
 
-            <div class="col-12">
-                <h1 class="text-center mt-3 text-style">Gallery</h1>
+            <div class="col-12 mt-5">
+                <h1 class="text-center mt-5 text-style">Gallery</h1>
             </div>
             @foreach ($albums as $album)
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12 my-2">

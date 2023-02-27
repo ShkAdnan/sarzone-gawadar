@@ -15,7 +15,7 @@ class homeAndBasicController extends Controller
 {
     public function Index(){
         $albums=album::latest('album_id')->limit(4)->get();
-        $stories=stories::limit(4)->get();
+        $stories=stories::latest('id')->limit(3)->get();
         $notices=notice::where('notice_online','true')->get();
         return response()->view('front.index2',['albums'=>$albums,'notices'=>$notices,'stories'=>$stories]);
 
