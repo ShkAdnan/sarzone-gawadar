@@ -169,7 +169,7 @@ class homeAndBasicController extends Controller
         $extension = $cv->extension();
         $nameToStore = $filename['filename'] . "_".time().".".$extension;
         //Move to folder
-        $path = $cv->move('public/upload/CVs/' ,$nameToStore);
+        $path = $cv->move('upload/CVs/' ,$nameToStore);
         return $nameToStore;
 
     }

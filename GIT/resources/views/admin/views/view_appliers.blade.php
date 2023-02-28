@@ -57,7 +57,7 @@
                                             <td>{{ $CV->applier_id }}</td>
 
                                             <td>
-                                                <a href="{{ asset("storage/upload/CVs/". $CV->applier_cv ) }}" target="_blank" download>{{ $CV->applier_cv }}</a>
+                                                <a href="{{ asset("upload/CVs/". $CV->applier_cv ) }}" target="_blank" >{{ $CV->applier_cv }}</a>
                                             </td>
                                             <td>
                                                 <a href="{{route('applier.delete',['id'=>$CV->applier_id])}}"><i class="fa fa-trash text-danger mx-2"></i></a>
