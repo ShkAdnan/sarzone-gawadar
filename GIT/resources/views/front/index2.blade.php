@@ -127,7 +127,7 @@
                                     <h1 class="text-style">Our Success Stories</h1>
                                 </div>
                             </div>
-                           
+
                             <div id="carouselExampleIndicators" class="carousel slide py-3" data-ride="carousel">
                                 <ol class="carousel-indicators">
                                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active bg-info py-2 rounded-circle"></li>
@@ -135,43 +135,43 @@
                                   <li data-target="#carouselExampleIndicators" data-slide-to="2" class="bg-info py-2 rounded-circle"></li>
                                 </ol>
                                 <div class="carousel-inner">
-                                 
+
                                     @foreach($stories as $slider)
                                     <div class="carousel-item @if($loop->first) active @endif">
                                         <div class="slider-image text-center">
                                             <img src="{{ asset('upload/images/' . $slider->stories_images) }}" class="d-inline-block border text-center rounded" alt="{{ $slider->image }}" height="100%" width="600px">
                                         </div>
-                                       
+
                                             <div class="full text_align_center">
 
-                                        
+
 
                                                 <h4 class="mt-4"><span class="theme_color_text">
                                                     {{$slider->name}}</h4>
-        
+
                                             </div>
                                             <div >
 
-                                        
+
 
                                                 <h4 class="mt-4"><span >
                                                     {{$slider->category}} </h4>
-        
+
                                             </div>
-        
+
                                             <div class="full text_align_center" style="text-align:justify">
-        
+
                                                 <p>{{$slider->discription}}</p>
-        
-                                            </div>  
+
+                                            </div>
                                         </div>
-                                   
-                             
-                                    
+
+
+
                                     @endforeach
-                              
-                               
-                                  
+
+
+
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -182,7 +182,7 @@
                                   <span class="sr-only">Next</span>
                                 </a>
                               </div>
-                        
+
                         </div>
 
                     </div>
@@ -230,8 +230,8 @@
                                         <p class="text-center">{{$slider->discription}}</p>
 
                                     </div>  </div>
-                                 
-                                 
+
+
                                     @endforeach
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -345,7 +345,7 @@
                         </div>
                     </div> --}}
                 </section>
-               
+
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-10 mx-auto mt-2"

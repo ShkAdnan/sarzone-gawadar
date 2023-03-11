@@ -119,9 +119,9 @@ class homeAndBasicController extends Controller
             'category'=>$req->title,
             'discription'=>$req->description,
             'stories_images'=>$this->images($req->image),
-            
+
         ]);
-        return redirect()->back()->with("status","success");
+        return redirect()->route('Stories.view')->with("msg","stories Created Successfully")->with("status","primary");
     }
     public function show(){
         $stories=stories::get();
@@ -132,7 +132,7 @@ class homeAndBasicController extends Controller
         return view('admin.edits.adit_stories',['stories'=>$stories]);
     }
     public function updateStories(Request $req){
-        
+
         if ($req->image) {
 
             stories::where('id',$req->id)->update([
@@ -151,7 +151,7 @@ class homeAndBasicController extends Controller
         }
 
 
-        return redirect()->route('Stories.view')->with("msg","Album Updated Successfully")->with("status","primary");
+        return redirect()->route('Stories.view')->with("msg","stories Updated Successfully")->with("status","primary");
     }
     public function delete(Request $req,stories $stories)
     {

@@ -52,7 +52,7 @@ hr {
     rgba(83, 83, 255, 1)
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
+ 
 input {
   background-color: #3475 !important;
   color: white !important;
@@ -71,7 +71,7 @@ input {
               @if (session()->has('Status'))
                 <div class="alert alert-success">
                     {{session()->get('Status')}}
-                </div>    
+                </div>
               @endif
               @if ($errors->any())
 
@@ -93,7 +93,7 @@ input {
 
             <div class="card shadow p-5">
               <form method="POST" action="{{route('login')}}">
-      
+
                 <h3 class="text-center text-uppercase mb-4">Login</h3>
                 <hr>
                 @csrf
@@ -101,7 +101,7 @@ input {
                   <label>Email</label>
                   <input type="email" name="email" placeholder="Email" class="form-control">
                 </div>
-      
+
                 <label for="Password">Password</label>
                 <div class="input-group mb-3">
                   <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password" aria-label="Enter Password" aria-describedby="basic-addon2">
@@ -110,9 +110,9 @@ input {
                     </span>
                   </div>
                 </div>
-      
+
                 <button class="btn btn-block btn-secondary rounded-pill mt-3">Login</button>
-      
+
               </form>
             </div>
           </section>

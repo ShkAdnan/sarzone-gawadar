@@ -16,12 +16,12 @@ class Login extends Controller
             'password' => 'required'
         ]);
 
-    
+
         $exist = DB::table('users')
         ->where('email' , $req->email)
         ->where('password',$req->password)
         ->count();
-        
+
         if($exist > 0){
             $fetch=DB::table('users')
             ->where('email', $req->email)
@@ -31,7 +31,7 @@ class Login extends Controller
             return redirect()->route('dashboard');
         }
         else{
-            return 'There is no account link with this email or username';     
+            return 'There is no account link with this email or username';
         }
 
         return "working";
@@ -42,7 +42,7 @@ class Login extends Controller
         session()->flush();
         return redirect('/admin/login');
     }
-    
-    
-    
+
+
+
 }
