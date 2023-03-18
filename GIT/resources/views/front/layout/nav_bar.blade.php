@@ -40,7 +40,7 @@
                         <!-- <a class="dropdown-item" href="#">Alumni Panel</a> -->
                     </div>
                 </li>
-        
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="about.html"
                         id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
@@ -52,7 +52,7 @@
                         <a class="dropdown-item" href="#">Faculty</a>
                     </div>
                 </li>
-           
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -63,7 +63,7 @@
                         <a class="dropdown-item" href="#">Fee Structure</a>
                     </div>
                 </li>
-            
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -74,7 +74,7 @@
                         <a class="dropdown-item" href="careres.html">Current Jobs</a>
                     </div>
                 </li>
-           
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

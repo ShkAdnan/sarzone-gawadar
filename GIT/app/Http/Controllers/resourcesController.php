@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class resourcesController extends Controller
 {
     function Elibrary(){
-        return redirect("#");
+        return view('front.E_library');
     }
     function helpDesk(){
         return view('front.helpDesk');

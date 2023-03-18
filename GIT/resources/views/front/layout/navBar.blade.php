@@ -48,7 +48,7 @@
         width: 100%;
         padding: 0;
         margin: 0;
-       
+
     }
 
     .dropdown-content a {
@@ -97,7 +97,7 @@
     }
 
     .dropdown .dropdown-menu {
-        
+
 
         -webkit-transition: all 0.5s;
 
@@ -182,7 +182,7 @@
                     {{-- <img src="{{ asset('front/images/icons8-small-icons-30.png') }}" /> --}}
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="z-index: 100;">
-    
+
                     <ul class="navbar-nav mx-auto text-center">
                         <li class="nav-item">
                             <a class="nav-link text-info" href="/">
@@ -190,17 +190,17 @@
                             </a>
                         </li>
                         <li class="nav-item dropdown px-2">
-    
-    
+
+
                             <a class="nav-link text-info dropdown-toggle" href="" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    
+
                                 Admissions
-    
+
                             </a>
-    
+
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-    
+
                                 <a class="dropdown-item" href="{{ route('onlineAdmission.index') }}">Apply Online</a>
                                 <a class="dropdown-item" href="{{ asset('front/images/GIT prospectus.pdf') }}"
                                     target="_blank">Download Prospectus</a>
@@ -208,131 +208,130 @@
                                     target="_blank">Download Admission <br> Form</a>
                                 <a class="dropdown-item" href="{{ asset('front/images/Vocational Course Admission Form.pdf') }}"
                                 target="_blank">Download Vocational Courses<br>Admission Form</a>
-    
+
                             </div>
-    
+
                         </li>
-    
-    
-    
+
+
+
                         <li class="nav-item dropdown px-2">
-    
+
                             <a class="nav-link text-info dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    
+
                                 About Us
-    
+
                             </a>
-    
+
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-    
+
                                 <a class="dropdown-item" href="{{ route('about.index') }}">Introduction</a>
-    
+
                                 <a class="dropdown-item" href="{{ route('about.secrataryMessage') }}">Secretary Message</a>
-    
+
                                 <a class="dropdown-item" href="{{ route('about.directorMessage') }}">Director Message</a>
-    
+
                                 <a class="dropdown-item" href="{{ route('about.principleMessage') }}">Principal Message</a>
-    
+
                                 <a class="dropdown-item" href="{{ route('about.faculty') }}">DAE Faculty</a>
-    
+
                                 <a class="dropdown-item" href="{{ route('about.vocationalFaculty') }}">Vocational
                                     Faculty</a>
-    
+
                             </div>
-    
+
                         </li>
-    
-    
-    
+
+
+
                         <li class="nav-item dropdown px-2">
-    
+
                             <a class="nav-link text-info dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    
+
                                 Programs
-    
+
                             </a>
-    
+
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-    
+
                                 <a class="dropdown-item" href="{{ route('program.offering') }}">Programs Offered</a>
-    
+
                                 <a class="dropdown-item" href="{{ route('program.fee_structure') }}">Fee Structure</a>
-    
+
                             </div>
-    
+
                         </li>
-    
-    
-    
+
+
+
                         <li class="nav-item dropdown px-2">
-    
+
                             <a class="nav-link text-info dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    
+
                                 Careers
-    
+
                             </a>
-    
+
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-    
+
                                 <a class="dropdown-item" href="{{ route('careers.front') }}">Join Us</a>
-    
+
                             </div>
-    
+
                         </li>
-    
-    
+
+
                         <li class="nav-item dropdown px-2">
-    
+
                             <a class="nav-link text-info dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    
+
                                 Alumni
-    
+
                             </a>
-    
+
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-    
+
                                 <a class="dropdown-item" href="{{ route('alumnae') }}">Graduate Directory</a>
                                 <a class="dropdown-item" href="{{ route('alumnae.verify') }}">Alumnae Verification</a>
                                 <a class="dropdown-item" href="{{ route('alumnae.placementsTable') }}">Placements</a>
-    
+
                             </div>
-    
+
                         </li>
-    
+
                         <li class="nav-item dropdown px-2">
-    
+
                             <a class="nav-link text-info dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    
+
                                 Resources
-    
+
                             </a>
-    
+
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-    
-                                <a class="dropdown-item" href="{{ route('about.Elibrary') }}"
-                                    target="_blank">E-Library</a>
+
+                                <a class="dropdown-item" href="{{ route('about.Elibrary') }}">E-Library</a>
                                 {{-- <a class="dropdown-item" href="{{route('about.helpDesk')}}">Help
-    
+
                                   Desk</a> --}}
-    
+
                                 <a class="dropdown-item" href="{{ route('about.FAQ') }}">FAQ</a>
-    
+
                             </div>
-    
+
                         </li>
-    
+
                     </ul>
-    
+
                 </div>
                 {{-- <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav text-center ml-auto">
                         <li class="nav-item">
-    
+
                             <a class="nav-link text-info text-info" href="/">
                                 Home
                             </a>
@@ -349,51 +348,51 @@
                                         target="_blank">Download Admission <br> Form</a>
                                 </div>
                             </div>
-    
+
                         </li>
-    
-    
-    
+
+
+
                         <li class="nav-item dropdown px-2">
                             <div class="dropdown px-2">
                                 <a href="" class="nav-link text-info text-info">About Us</a>
-    
+
                                 <div class="dropdown-content p-2">
-    
+
                                     <a class="dropdown-item" href="{{ route('about.index') }}">Introduction</a>
-    
+
                                     <a class="dropdown-item" href="{{ route('about.secrataryMessage') }}">Secretary
                                         Message</a>
-    
+
                                     <a class="dropdown-item" href="{{ route('about.directorMessage') }}">Director
                                         Message</a>
-    
+
                                     <a class="dropdown-item" href="{{ route('about.principleMessage') }}">Principal
                                         Message</a>
-    
+
                                     <a class="dropdown-item" href="{{ route('about.faculty') }}">DAE Faculty</a>
-    
+
                                     <a class="dropdown-item" href="{{ route('about.vocationalFaculty') }}">Vocational
                                         Faculty</a>
                                 </div>
                             </div>
-    
-    
+
+
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-    
+
                                 <a class="dropdown-item" href="{{ route('about.index') }}">Introduction</a>
-    
+
                                 <a class="dropdown-item" href="{{ route('about.secrataryMessage') }}">Secretary
                                     Message</a>
-    
+
                                 <a class="dropdown-item" href="{{ route('about.directorMessage') }}">Director
                                     Message</a>
-    
+
                                 <a class="dropdown-item" href="{{ route('about.principleMessage') }}">Principal
                                     Message</a>
-    
+
                                 <a class="dropdown-item" href="{{ route('about.faculty') }}">DAE Faculty</a>
-    
+
                                 <a class="dropdown-item" href="{{ route('about.vocationalFaculty') }}">Vocational
                                     Faculty</a>
                             </div>
@@ -401,7 +400,7 @@
                         <li class="nav-item ">
                             <div class="dropdown px-2">
                                 <a href="{{ route('careers.front') }}" class="nav-link text-info text-info">Careers</a>
-     
+
                             </div>
                         </li>
                         <li class="nav-item  px-2">
@@ -414,12 +413,12 @@
                                 </div>
                             </div>
                         </li>
-                   
-                     
+
+
                         <li class="nav-item">
                             <div class="dropdown px-2">
                                 <a href="" class="nav-link text-info text-info">Alumni</a>
-    
+
                                 <div class="dropdown-content p-2">
                                     <a class="dropdown-item" href="{{ route('alumnae') }}">Graduate Directory</a>
                                     <a class="dropdown-item" href="{{ route('alumnae.verify') }}">Alumnae
@@ -429,12 +428,12 @@
                                 </div>
                             </div>
                         </li>
-                     
-    
+
+
                         <li class="nav-item dropdown px-2">
                             <div class="dropdown px-2">
                                 <a href="" class="nav-link text-info text-info">Resources</a>
-    
+
                                 <div class="dropdown-content p-2">
                                     <a class="dropdown-item" href="{{ route('about.Elibrary') }}"
                                         target="_blank">E-Library</a>
@@ -442,13 +441,13 @@
                                 </div>
                             </div>
                         </li>
-    
+
                     </ul>
-    
+
                 </div> --}}
-    
+
             </nav>
-    
+
         </div>
     </div>
 
