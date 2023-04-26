@@ -137,7 +137,7 @@
                     attaining such goals and wish all the best to the institution, management, faculty and students. May
                     Almighty Allah be with you (AMEEN).
                 </p>
-            </div>
+            </div> 
         </div>
     </div>
     <!-- end section -->
