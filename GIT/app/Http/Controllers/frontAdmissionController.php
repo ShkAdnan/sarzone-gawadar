@@ -28,7 +28,7 @@ class frontAdmissionController extends Controller
     //   return view('front.onlineAdmissionForm_pdf', compact('data'));
     // }
 
-    public function createPDF($student_id=48){
+    public function createPDF($student_id){
 
     $data=student_personal_info::where('student_personal_infos.student_id',$student_id)
     ->join('guardian_infos','guardian_infos.student_id','student_personal_infos.student_id')
@@ -37,14 +37,15 @@ class frontAdmissionController extends Controller
     ->join('inter_results','inter_results.student_id','student_personal_infos.student_id')
     ->select('student_personal_infos.*','guardian_infos.*','programs.program_name','matric_results.*','inter_results.*')
     ->first();
+
     //  Making PDF
     view()->share('info',$data);
     $pdf = PDF::loadView('front.onlineAdmissionForm_pdf',$data);
     $pdf->setPaper('A4','potrait');
 
     //  Storing Name
-    $fileName =  "Student".$student_id;
-    return Storage::put('public/storage/upload/students/'.$fileName.".pdf", $pdf->output());
+    $fileName =  "Student"."_".$student_id;
+     Storage::put('upload/students/'.$fileName.".pdf", $pdf->output());
 
     // return $pdf->download($fileName.'.pdf');
     // return $pdf->stream('test.pdf');

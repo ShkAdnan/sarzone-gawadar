@@ -49,7 +49,7 @@
 
                     <div class="sb-nav-link-icon"><i class="fas fa-graduation-cap"></i></div>
 
-                    Graduate Directory
+                    Graduate  Directory
 
                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
 
@@ -183,7 +183,48 @@
                     </nav>
 
                 </div>
+                {{-- <a class="nav-link collapsed my-1" href="#" data-toggle="collapse" data-target="#DAE" aria-expanded="false" aria-controls="Notices">
 
+                    <div class="sb-nav-link-icon"><i class="fas fa-flag"></i></div>
+
+                    DAE Faculty
+
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+
+                </a>
+
+                <div class="collapse pb-5" id="DAE" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+
+                    <nav class="sb-sidenav-menu-nested nav">
+
+                        <a class="nav-link" href="{{route('Stories')}}">Add  DAE Faculty</a>
+
+                        <a class="nav-link" href="{{route('Stories.view')}}">View  DAE Faculty</a>
+
+                    </nav> 
+
+                </div>
+                <a class="nav-link collapsed my-1" href="#" data-toggle="collapse" data-target="#Vocational" aria-expanded="false" aria-controls="Notices">
+
+                    <div class="sb-nav-link-icon"><i class="fas fa-flag"></i></div>
+
+                    Vocational Faculty
+
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+
+                </a>
+
+                <div class="collapse pb-5" id="Vocational" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+
+                    <nav class="sb-sidenav-menu-nested nav">
+
+                        <a class="nav-link" href="{{route('Stories')}}">Add  Vocational Faculty</a>
+
+                        <a class="nav-link" href="{{route('Stories.view')}}">View  Vocational Faculty</a>
+
+                    </nav>
+
+                </div> --}}
 
             </div>
 

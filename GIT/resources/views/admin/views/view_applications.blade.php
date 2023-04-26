@@ -77,9 +77,9 @@
                                                     <td>{{ $item->student_CNIC }}</td>
 
                                                     <td><a target="_blank" href="{{asset('upload/Information/'.$item->matric_certificate)}}" >{{ $item->student_id }} Matric Card</a></td>
-                                                    
+
                                                     <td><a target="_blank" href="{{asset('upload/Information/'.$item->inter_certificate)}}" >{{ $item->student_id }} Intermediate Card</a></td>
-                                                    
+
                                                     <td><a target="_blank" href="{{asset('upload/Information/'.$item->student_domicileImg)}}" >{{ $item->student_id }} Domicile</a></td>
 
                                                     <td>{{ $item->time }}</td>
@@ -179,9 +179,9 @@
                                                     <td>{{ $item->student_CNIC }}</td>
 
                                                     <td><a href="{{asset('storage/upload/Information/'.$item->matric_certificate)}}" target="_blank">{{ $item->student_id }} Matric Card</a></td>
-                                                    
+
                                                     <td><a href="{{asset('storage/upload/Information/'.$item->inter_certificate)}}" target="_blank">{{ $item->student_id }} Intermediate Card</a></td>
-                                                    
+
                                                     <td><a href="{{asset('storage/upload/Information/'.$item->student_domicileImg)}}" target="_blank">{{ $item->student_id }} Domicile</a></td>
 
                                                     <td>{{ $item->time }}</td>

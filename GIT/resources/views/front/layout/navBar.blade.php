@@ -236,8 +236,7 @@
 
                                 <a class="dropdown-item" href="{{ route('about.faculty') }}">DAE Faculty</a>
 
-                                <a class="dropdown-item" href="{{ route('about.vocationalFaculty') }}">Vocational
-                                    Faculty</a>
+                                <a class="dropdown-item" href="{{ route('about.vocationalFaculty') }}">Vocational Faculty</a>
 
                             </div>
 

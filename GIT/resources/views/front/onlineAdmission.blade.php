@@ -81,9 +81,9 @@
  }
     @media (max-width: 502px) {
             .bg-img {
-        
+
              background-position: top center;
-         
+
              height: 60vh;
              width: 100%;
              /* padding: 40vh 0px 50px 0px; */
@@ -96,7 +96,7 @@
 
 @include('front.layout.navBar')
 
-    
+
 
     <!-- section -->
 
@@ -519,19 +519,19 @@
 
 
 
-                        <div style="display: flex; font-size: 30px;" class="text-style">Educational Qualifications
+                        <div style="display: flex; font-size: 22px;" class="text-style">Educational Qualifications
 
-                            <p style="padding-left: 10%;">(Matriculation Must be in Science Subjects)</p>
+
 
                         </div>
-
+                        <p style="padding-left: 10%;">(Matriculation Must be in Science Subjects)</p>
                         <table class="table table-responsive" border="1">
 
 
 
                             <tr>
 
-                                <th>Examination</th>
+                                <th>Examination 1</th>
 
                                 <th>Board</th>
 
@@ -610,7 +610,7 @@
 
                         <table class="table table-responsive">
 
-                            <div style="display: flex; font-size: 25px; padding:20px 20px;" class="text-style">Marks in Science Subjects and in
+                            <div style="display: flex; font-size: 22px; padding:20px 20px;" class="text-style">Marks in Science Subjects and in
 
                                 English
 
@@ -618,7 +618,7 @@
 
                             <tr>
 
-                                <th>Examination</th>
+                                <th>Examination 2</th>
 
                                 <th>English</th>
 
@@ -696,7 +696,7 @@
 
                         </table>
 
-                        <div class="col-12" style="font-size: 20px; padding:20px 20px;">Optional Facilities Required
+                        {{-- <div class="col-12" style="font-size: 20px; padding:20px 20px;">Optional Facilities Required
 
                             <div class="form-row">
                                 <div class="col-lg-6 col-md-6 col-sm-12">
@@ -722,7 +722,7 @@
                                 </div>
                             </div>
 
-                        </div>
+                        </div> --}}
 
                         <div class="col-12 text-style" style="font-size: 25px;">
 
