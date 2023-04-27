@@ -48,7 +48,7 @@ class frontAdmissionController extends Controller
             'programs' => $programs,
             'cities' => $cities,
         ]);
-    }
+    } 
     public function store(Request $req)
     {
         // return $req;
