@@ -57,14 +57,14 @@
          }
          @media (max-width: 502px) {
             .bg-img {
-        
+
              background-position: top center;
-         
+
              height: 60vh;
              width: 100%;
              /* padding: 40vh 0px 50px 0px; */
          }
-       
+
          }
 
      </style>
@@ -230,7 +230,7 @@
 
                 </p>
 
-                <ul style="padding: 30px;">
+                <ol style="padding: 30px;">
 
                     <li>To improve flexibility and responsiveness to labour / job market required for technical education.
 
@@ -275,7 +275,7 @@
 
                     </li>
 
-                </ul>
+                </ol>
 
                 Selective expansion for the technical graduates of coastal areas and introduction of new technologies.
 

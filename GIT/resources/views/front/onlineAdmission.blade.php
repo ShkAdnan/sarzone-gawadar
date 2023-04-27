@@ -231,7 +231,7 @@
 
                             <label for="validationServer01">First Name</label>
 
-                            <input type="text" value="{{ old('firstName') }}" name="firstName" class="form-control"
+                            <input type="text"  id="firstName" value="{{ old('firstName') }}" name="firstName" class="form-control"
                                 required>
                             <div class="valid-feedback">
                                 Looks good!
@@ -243,7 +243,7 @@
 
                             <label for="validationServer01">Last Name</label>
 
-                            <input type="text" value="{{ old('lastName') }}" name="lastName" class="form-control"
+                            <input type="text"  id="lastName" value="{{ old('lastName') }}" name="lastName" class="form-control"
                                 required>
 
                         </div>
@@ -273,7 +273,7 @@
 
                             <label for="validationServer01">CNIC</label>
 
-                            <input type="text" class="form-control CNIC" value="{{ old('CNIC') }}" name="CNIC" required>
+                            <input type="text" class="form-control CNIC"  value="{{ old('CNIC') }}" name="CNIC" required onKeyPress="if(this.value.length==15) return false;">
                             <p class="text-primary" style="font-size: 13px;padding:0px;margin:0px;">e.g xxxxx-xxxxxxx-x</p>
                         </div>
 
@@ -912,6 +912,22 @@
         }
 
     </script>
+
+
+
+    <script type="text/javascript">
+            $(document).ready(function () {
+                $('#firstName,#lastName').bind('keypress', testInput);
+                function testInput(event) {
+                    var value = String.fromCharCode(event.which);
+                    var pattern = new RegExp(/[a-zåäö ]/i);
+                    return pattern.test(value);
+                    }
+                document.getElementById('hiringDate').max = new Date().toISOString().split("T")[0];
+                document.getElementById('dobDate').max = new Date().toISOString().split("T")[0];
+       });
+
+            </script>
 
     @include('front.layout.footer')
 

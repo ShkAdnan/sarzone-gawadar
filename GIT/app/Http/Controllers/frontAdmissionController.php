@@ -9,6 +9,7 @@ use App\Models\guardian_info;
 use App\Models\matric_result;
 use App\Models\inter_result;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage as FacadesStorage;
 // use Barryvdh\DomPDF\Facade\Pdf;
 use PDF;
@@ -19,7 +20,9 @@ class frontAdmissionController extends Controller
 {
     public function createPDF($student_id)
     {
-
+        if(!File::isDirectory(public_path('uploads/students/'))){
+            File::makeDirectory(public_path('uploads/students/'), 0777, true, true);
+          }
 
         $data = student_personal_info::where('student_personal_infos.student_id', $student_id)
             ->join('guardian_infos', 'guardian_infos.student_id', 'student_personal_infos.student_id')

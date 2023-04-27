@@ -107,8 +107,8 @@ input::-webkit-inner-spin-button {
     {{-- <img src="{{ asset('front/images/cover img.jpeg') }}" style="height: 70vh;" width="100%" alt=""> --}}
 
     <div class="container">
-        
-    <div class="row mt-5" style="text-align:justify;">
+
+    <div class="row mt-5" >
         <div class="col-lg-4 text-center">
             <img src="{{asset('front/images/director technical education.jpeg')}}" class="direct-img" alt="">
         </div>
@@ -116,7 +116,7 @@ input::-webkit-inner-spin-button {
             <h1 class="my-3">Messagae from Professor Engineer Muhammad Rafiq Ghilzai</h1>
             <h3>Director Technical Education, Balochistan</h3>
         </div>
-        <div class="col-lg-12 my-5"> 
+        <div class="col-lg-12 my-5" style="text-align:justify;">
             <p>
                 Gwadar Institute of Technology (GIT) has set itself on the right path from its very beginning and earned a very positive reputation. Youth in Makran is highly capable; Gwadar Institute of Technology is rightly poised to polish their abilities and channelize their energies to seek practical knowledge in the emerging fields of technology. The standard of teaching and learning process at GIT is compatible with any quality institute of the country despite inadequate faculty, administrative difficulties and being quite distant from the city.
             </p>
@@ -130,7 +130,7 @@ input::-webkit-inner-spin-button {
     </div>
     </div>
     <!-- end section -->
-                
+
 
     <!-- footer -->
 
