@@ -72,7 +72,7 @@
 
                                                     <td>{{ $item->student_id }}</td>
 
-                                                    <td><a target="_blank" href="{{asset('upload/students/'.$item->CV.".pdf" )}}" target="_blank">{{ $item->CV }}</a></td>
+                                                    <td><a target="_blank" href="{{asset('GIT/public/uploads/students/' . 'Student_' .  $item->student_id . '.pdf' )}}" target="_blank">{{ $item->CV }}</a></td>
 
                                                     <td>{{ $item->student_CNIC }}</td>
 

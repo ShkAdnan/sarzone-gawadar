@@ -34,7 +34,7 @@
     <h3>Application No. {{$info->student_id}}</h3>
     <div>
         <h2 style="float: left;margin-top:60px;">{{ $info->student_firstName . ' ' . $info->student_lastName }}</h2>
-        <img src="{{ asset('storage/upload/Information/' . $info->student_image) }}" height="200px" align="right"
+        <img src="{{ asset('upload/Information/' . $info->student_image) }}" height="200px" align="right"
             width="30%" alt="">
     </div>
     <div class="personal_info">
@@ -225,7 +225,7 @@
     <div style="margin-top: 10px;">
         <b>Require Pick n Drop : </b>  {{ $info->student_picknDrop}}
     </div>
-    
+
     {{-- <div style="margin-top: 300px;"></div>
     <div>
         <h1 >Domicile</h1>
@@ -261,7 +261,7 @@
             <br><br>
         </div>
         <div>
-            
+
             <h4>Matric Certificate</h4>
             <img src="{{ asset('storage/upload/Information/' . $info->matric_certificate)}}" height="250px" width="100%" alt="">
             <br><br>
@@ -269,9 +269,9 @@
         <div>
             <h4>Domicile Image</h4>
             <img src="{{ asset('storage/upload/Information/' . $info->student_domicileImg)}}" height="250px" width="100%" alt="">
-            <br><br>        
+            <br><br>
         </div>
-    
+
     </div> --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.5/pdfobject.min.js" integrity="sha512-K4UtqDEi6MR5oZo0YJieEqqsPMsrWa9rGDWMK2ygySdRQ+DtwmuBXAllehaopjKpbxrmXmeBo77vjA2ylTYhRA==" crossorigin="anonymous"></script>
     <script>PDFObject.embed("", "#example1");</script>

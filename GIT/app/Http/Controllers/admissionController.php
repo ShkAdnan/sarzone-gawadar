@@ -64,6 +64,7 @@ class admissionController extends Controller
     public function onlineAdmission(){
         $programs=program::get();
         return view('admin.onlineAdmission',['programs'=>$programs]);
+
     }
     public function online(Request $value){
         program::where('program_id',$value->id)->update([

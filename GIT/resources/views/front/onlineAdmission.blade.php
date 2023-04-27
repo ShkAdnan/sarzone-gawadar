@@ -136,7 +136,7 @@
                         Your Application Number is {{ session()->get('No') }} <br>
 
                         Please click on the following link and Dowload your admission form Copy <br>
-                        <a href="{{ asset('storage/upload/students/' . 'Student' . session()->get('No') . '.pdf') }}"
+                        <a href="{{ asset('GIT/public/uploads/students/' . 'Student_' . session()->get('No') . '.pdf') }}"
                             target="_blank"
                             class="alert-link text-primary"><u>{{ 'www.gwadarinstituteoftechnology.com/admissionForms/Student' . session()->get('No') }}</u></a>
 
