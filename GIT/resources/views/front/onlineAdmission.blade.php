@@ -255,7 +255,7 @@
                             <label for="validationServer01">Contact Number</label>
 
                             <input type="number" class="form-control" value="{{ old('contact') }}" name="contact"
-                                required>
+                                required onKeyPress="if(this.value.length==11) return false;">
 
                         </div>
 
@@ -291,7 +291,7 @@
                             <label for="validationServer01">Whatsapp</label>
 
                             <input type="number" class="form-control numbers" value="{{ old('whatsappContact') }}"
-                                name="whatsappContact" placeholder="Watsapp number">
+                                name="whatsappContact" placeholder="Watsapp number" onKeyPress="if(this.value.length==11) return false;">
 
                         </div>
 
@@ -457,7 +457,7 @@
                             <label for="validationServer01">CNIC</label>
 
                             <input type="text" class="form-control CNIC" value="{{ old('fatherCNIC') }}"
-                                name="fatherCNIC" required>
+                                name="fatherCNIC" required onKeyPress="if(this.value.length==15) return false;">
                             <p class="text-primary" style="font-size: 13px;padding:0px;margin:0px;">e.g xxxxx-xxxxxxx-x</p>
                         </div>
 
@@ -466,7 +466,7 @@
                             <label for="validationServer01">Contact Number</label>
 
                             <input type="text" class="form-control numbers" value="{{ old('fatherContact') }}"
-                                name="fatherContact" required>
+                                name="fatherContact" required onKeyPress="if(this.value.length==11) return false;">
 
                         </div>
 
@@ -475,7 +475,7 @@
                             <label for="validationServer01">Whatsapp</label>
 
                             <input type="text" class="form-control numbers" value="{{ old('fatherWhatsappContact') }}"
-                                name="fatherWhatsappContact">
+                                name="fatherWhatsappContact" onKeyPress="if(this.value.length==11) return false;">
 
                         </div>
 
