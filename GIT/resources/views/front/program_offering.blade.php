@@ -6,7 +6,7 @@
         font-size: 18px !important;
     }
     .hide {
-        display: none;
+        display: none; 
     }
     .read-more-show{
         font-size: 18px;
@@ -19,7 +19,7 @@
 
 @section('content')
 
-   
+
 
     @include('front.layout.navBar')
 
@@ -59,68 +59,68 @@
                                     <tbody>
                                         <tr>
                                             <th>1</th>
-                                            <td>Islamiat and Pak studies</td> 
+                                            <td>Islamiat and Pak studies</td>
                                             <td>1</td>
                                             <td>0</td>
                                             <td>1</td>
                                          </tr>
                                          <tr>
                                              <th>2</th>
-                                             <td>English</td> 
+                                             <td>English</td>
                                              <td>2</td>
                                              <td>0</td>
                                              <td>2</td>
                                           </tr>
                                           <tr>
                                              <th>3</th>
-                                             <td>Applied Mathematics-I</td> 
+                                             <td>Applied Mathematics-I</td>
                                              <td>3</td>
                                              <td>0</td>
                                              <td>3</td>
                                           </tr>
                                           <tr>
                                              <th>4</th>
-                                             <td>Applied Physics </td> 
+                                             <td>Applied Physics </td>
                                              <td>1</td>
                                              <td>3</td>
                                              <td>2</td>
                                           </tr>
                                           <tr>
                                              <th>5</th>
-                                             <td>Communication Skills</td> 
+                                             <td>Communication Skills</td>
                                              <td>0</td>
                                              <td>3</td>
                                              <td>1</td>
                                           </tr>
                                           <tr>
                                              <th>6</th>
-                                             <td>Intro To Architecture</td> 
+                                             <td>Intro To Architecture</td>
                                              <td>1</td>
                                              <td>3</td>
                                              <td>2</td>
                                           </tr>
                                           <tr>
                                              <th>7</th>
-                                             <td>Architecture Graphics-I</td> 
+                                             <td>Architecture Graphics-I</td>
                                              <td>0</td>
                                              <td>9</td>
                                              <td>3</td>
                                           </tr>
                                           <tr>
                                              <th>8</th>
-                                             <td>Building Meterials & Construction-I</td> 
+                                             <td>Building Meterials & Construction-I</td>
                                              <td>2</td>
                                              <td>3</td>
                                              <td>3 </td>
                                           </tr>
                                           <tr>
                                              <th>9</th>
-                                             <td>Computer Aided Drafting & presentation -I</td> 
+                                             <td>Computer Aided Drafting & presentation -I</td>
                                              <td>1</td>
                                              <td>6</td>
                                              <td>3</td>
                                           </tr>
-                                        </tbody>   
+                                        </tbody>
                                 </table>
                                 <h4 class="text-uppercase text-left mt-5 mb-2"><u>Second year</u></h4>
                                 <table class="table table-bordered">
@@ -133,63 +133,63 @@
                                     </tr>
                                     <tr>
                                        <th>1</th>
-                                       <td>Islamiat and Pak studies</td> 
+                                       <td>Islamiat and Pak studies</td>
                                        <td>1</td>
                                        <td>0</td>
                                        <td>1</td>
                                     </tr>
                                     <tr>
                                         <th>2</th>
-                                        <td>Applied Mathematics -II</td> 
+                                        <td>Applied Mathematics -II</td>
                                         <td>2</td>
                                         <td>0</td>
                                         <td>2</td>
                                      </tr>
                                      <tr>
                                         <th>3</th>
-                                        <td>Enviromental Studies</td> 
+                                        <td>Enviromental Studies</td>
                                         <td>2</td>
                                         <td>0</td>
                                         <td>2</td>
                                      </tr>
                                      <tr>
                                         <th>4</th>
-                                        <td>Structural Mechanics & RCC Designs </td> 
+                                        <td>Structural Mechanics & RCC Designs </td>
                                         <td>2</td>
                                         <td>3</td>
                                         <td>3</td>
                                      </tr>
                                      <tr>
                                         <th>5</th>
-                                        <td>Architecture Drawing & Designs -I</td> 
+                                        <td>Architecture Drawing & Designs -I</td>
                                         <td>0</td>
                                         <td>9</td>
                                         <td>3</td>
                                      </tr>
                                      <tr>
                                         <th>6</th>
-                                        <td>Computer Aided Drafting & Presentation -II</td> 
+                                        <td>Computer Aided Drafting & Presentation -II</td>
                                         <td>0</td>
                                         <td>6</td>
                                         <td>2</td>
                                      </tr>
                                      <tr>
                                         <th>7</th>
-                                        <td>Building Materials & Construction-II</td> 
+                                        <td>Building Materials & Construction-II</td>
                                         <td>2</td>
                                         <td>3</td>
                                         <td>3</td>
                                      </tr>
                                      <tr>
                                         <th>8</th>
-                                        <td>History of Architecture</td> 
+                                        <td>History of Architecture</td>
                                         <td>2</td>
                                         <td>0</td>
                                         <td>2 </td>
                                      </tr>
                                      <tr>
                                         <th>9</th>
-                                        <td>Surveying And Leveling</td> 
+                                        <td>Surveying And Leveling</td>
                                         <td>2</td>
                                         <td>6</td>
                                         <td>4</td>
@@ -206,65 +206,65 @@
                                     </tr>
                                     <tr>
                                        <th>1</th>
-                                       <td>Islamiat and Pak studies</td> 
+                                       <td>Islamiat and Pak studies</td>
                                        <td>1</td>
                                        <td>0</td>
                                        <td>1</td>
                                     </tr>
                                     <tr>
                                         <th>2</th>
-                                        <td>Enviromental Studies -II</td> 
+                                        <td>Enviromental Studies -II</td>
                                         <td>2</td>
                                         <td>0</td>
                                         <td>2</td>
                                      </tr>
                                      <tr>
                                         <th>3</th>
-                                        <td>Architecture Drawing & Designs -II</td> 
+                                        <td>Architecture Drawing & Designs -II</td>
                                         <td>0</td>
                                         <td>12</td>
                                         <td>4</td>
                                      </tr>
                                      <tr>
                                         <th>4</th>
-                                        <td>Model Markting </td> 
+                                        <td>Model Markting </td>
                                         <td>0</td>
                                         <td>6</td>
                                         <td>2</td>
                                      </tr>
                                      <tr>
                                         <th>5</th>
-                                        <td>Specification and  Estimation</td> 
+                                        <td>Specification and  Estimation</td>
                                         <td>2</td>
                                         <td>3</td>
                                         <td>3</td>
                                      </tr>
                                      <tr>
                                         <th>6</th>
-                                        <td>Building Materials & Construction-III</td> 
+                                        <td>Building Materials & Construction-III</td>
                                         <td>2</td>
                                         <td>3</td>
                                         <td>3</td>
                                      </tr>
                                      <tr>
                                         <th>7</th>
-                                        <td>Construction Management & Safety Practices</td> 
+                                        <td>Construction Management & Safety Practices</td>
                                         <td>2</td>
                                         <td>0</td>
                                         <td>2</td>
                                      </tr>
                                      <tr>
                                         <th>8</th>
-                                        <td>Computer Aided Drafting & presentation -III</td> 
+                                        <td>Computer Aided Drafting & presentation -III</td>
                                         <td>0</td>
                                         <td>6</td>
                                         <td>2</td>
                                      </tr>
-                                     
+
                                 </table>
                             </div>
                         </div>
-                        
+
                 </dd>
 
                 <dt><h3 class="mt-5">DAE Civil</h3></dt>
@@ -391,7 +391,7 @@
                                         <td>0</td>
                                         <td>1</td>
                                     </tr>
-                                    
+
                                     <tr>
                                         <th>4.</th>
                                         <td>Public Health Technology</td>
@@ -475,7 +475,7 @@
                                         <td>6</td>
                                         <td>4</td>
                                     </tr>
-                                    
+
                                     <tr>
                                         <th>4.</th>
                                         <td>Enviroment Health & Safety</td>
@@ -529,7 +529,7 @@
                             </table>
                         </div>
                     </div>
-                    
+
                 </dd>
 
                 <dt><h3 class="mt-5">DAE Electronics</h3></dt>
@@ -722,79 +722,79 @@
                                 </tr>
                                 <tr>
                                    <td>1</td>
-                                   <td>Islamiat and Pak studies</td> 
+                                   <td>Islamiat and Pak studies</td>
                                    <td>1</td>
                                    <td>0</td>
                                    <td>1</td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Industrial Management and Human Relations</td> 
+                                    <td>Industrial Management and Human Relations</td>
                                     <td>1</td>
                                     <td>0</td>
                                     <td>1</td>
                                  </tr>
                                  <tr>
                                     <td>3</td>
-                                    <td>Occupational Safety, Health and Environment</td> 
+                                    <td>Occupational Safety, Health and Environment</td>
                                     <td>1</td>
                                     <td>0</td>
                                     <td>1</td>
                                  </tr>
                                  <tr>
                                     <td>4</td>
-                                    <td>Computer Architecture</td> 
+                                    <td>Computer Architecture</td>
                                     <td>3</td>
                                     <td>3</td>
                                     <td>4</td>
                                  </tr>
                                  <tr>
                                     <td>5</td>
-                                    <td>Equipment Maintenance & Servicing</td> 
+                                    <td>Equipment Maintenance & Servicing</td>
                                     <td>1</td>
                                     <td>6</td>
                                     <td>3</td>
                                  </tr>
                                  <tr>
                                     <td>6</td>
-                                    <td>Projects</td> 
+                                    <td>Projects</td>
                                     <td>0</td>
                                     <td>6</td>
                                     <td>2</td>
                                  </tr>
                                  <tr>
                                     <td>7</td>
-                                    <td>Industrial Electronics</td> 
+                                    <td>Industrial Electronics</td>
                                     <td>2</td>
                                     <td>3</td>
                                     <td>3</td>
                                  </tr>
                                  <tr>
                                     <td>8</td>
-                                    <td>Power Electronics</td> 
+                                    <td>Power Electronics</td>
                                     <td>2</td>
                                     <td>3</td>
                                     <td>3 </td>
                                  </tr>
                                  <tr>
                                     <td>9</td>
-                                    <td>Microcontroller Programming and Applications</td> 
+                                    <td>Microcontroller Programming and Applications</td>
                                     <td>2</td>
                                     <td>3</td>
                                     <td>3</td>
                                  </tr>
-                                 
+
                             </table>
                         </div>
                     </div>
-                    
+
                 </dd>
 
             </dl>
 
             <div class="row">
                 <div class="col-lg-12 col-md-12 mb-5">
-                    
+
                     <h1 class="text-style">Vocational Courses</h1>
 
                     <ul style="list-style-type: circle !important;padding-left:55px;">
@@ -822,7 +822,7 @@
        if ($(this).html()=="Show Syllabus") {
         $(this).html("Hide Syllabus")
        } else {
-        $(this).html("Show Syllabus")   
+        $(this).html("Show Syllabus")
        }
    })
 </script>
