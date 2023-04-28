@@ -447,7 +447,7 @@
 
                             <label for="validationServer01">Name</label>
 
-                            <input type="text" class="form-control" value="{{ old('fatherName') }}" name="fatherName"
+                            <input type="text" id="fatherName" class="form-control" value="{{ old('fatherName') }}" name="fatherName"
                                 required>
 
                         </div>
@@ -917,7 +917,7 @@
 
     <script type="text/javascript">
             $(document).ready(function () {
-                $('#firstName,#lastName').bind('keypress', testInput);
+                $('#firstName,#lastName,#fatherName').bind('keypress', testInput);
                 function testInput(event) {
                     var value = String.fromCharCode(event.which);
                     var pattern = new RegExp(/[a-zåäö ]/i);

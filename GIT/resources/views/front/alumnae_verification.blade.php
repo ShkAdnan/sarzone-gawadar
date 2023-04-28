@@ -24,7 +24,7 @@
             <form action="{{route('alumnae.details')}}" method="POST">
                 @csrf
                 <div class="form-group">
-                    <input type="text" pattern="^[0-9]{5}-[0-9]{7}-[0-9]$" name="CNIC" id="CNIC" class="form-control"
+                    <input type="text" pattern="^[0-9]{5}-[0-9]{7}-[0-9]$" onKeyPress="if(this.value.length==15) return false;" name="CNIC" id="CNIC" class="form-control"
 
                         placeholder="" aria-describedby="helpId">
                         <span style="color:red;">@error('cnic') {{$message}} @enderror</span> <br>
@@ -38,8 +38,8 @@
 
 
     @if (isset($details) && sizeof($details))
-    
-        
+
+
     <div class="row details">
             <div class="col-lg-10 col-md-10 col-sm-12 mx-auto">
                 <ul style="margin: 40px 0px 100px 0px;">
@@ -58,7 +58,7 @@
             <h4 style="color: red;">Record Not Found</h4>
         </div>
     @endif
-    
+
     @include('front.layout.footer')
 
 <script>
@@ -68,7 +68,7 @@
 
     return isValidCNIC(character);
 
-    }); 
+    });
 
 
 

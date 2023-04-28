@@ -150,7 +150,7 @@
 
                 </a>
 
-                <div class="collapse pb-5" id="Notices" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                <div class="collapse " id="Notices" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
 
                     <nav class="sb-sidenav-menu-nested nav">
 
