@@ -129,7 +129,7 @@
                             </div>
                             {{-- <h1>Pending</h1> --}}
                             <div id="carouselExampleIndicators" class="carousel slide py-3" data-ride="carousel">
-                                <ol class="carousel-indicators">
+                                <ol class="carousel-indicators" style="z-index: 1">
                                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active bg-info py-2 rounded-circle"></li>
                                   <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-info py-2 rounded-circle"></li>
                                   <li data-target="#carouselExampleIndicators" data-slide-to="2" class="bg-info py-2 rounded-circle"></li>
