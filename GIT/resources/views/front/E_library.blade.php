@@ -161,15 +161,15 @@
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
             <ol class="carousel-indicators">
-    
+
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    
+
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    
+
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    
+
             </ol>
-    
+
         </div>
 
     </div>
@@ -178,12 +178,12 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 my-5">
-                <h2>WELLCOME TO OUR LIBRARY</h2>
+                <h2>WELCOME TO OUR LIBRARY</h2>
             </div>
         </div>
     </div>
-    
-{{-- 
+
+{{--
     <div class="container-fluid d-flex mt-5">
 
         <div class="row">

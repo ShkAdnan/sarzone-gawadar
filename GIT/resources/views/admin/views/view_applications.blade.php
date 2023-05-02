@@ -88,7 +88,7 @@
 
                                                         <a
                                                             href="{{ route('online_applications.makeViewed', $item->student_id) }}"><i
-                                                                class="fa fa-eye mx-2"></i></a>(Make Viewed)
+                                                                class="fa fa-eye mx-2"></i></a>
 
                                                         <a
                                                             href="{{ route('online_applications.delete', $item->student_id) }}"><i

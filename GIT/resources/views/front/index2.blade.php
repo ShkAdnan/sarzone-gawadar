@@ -64,7 +64,7 @@
 
             </div>
         </div>
-    </div> 
+    </div>
 
 
     <div class="container">
@@ -175,7 +175,7 @@
 
                     </div>
 
-                   
+
                 </section>
 
             </div>
@@ -295,7 +295,7 @@
                         </div>
                     </a>
                 </div>
-            @endforeach 
+            @endforeach
         </div>
     </div>
     <section class="layout_padding section">
@@ -310,7 +310,7 @@
 
                 </div>
 
-            </div> 
+            </div>
 
             <div class="row">
 
@@ -331,7 +331,7 @@
                         The three years diploma of Associate Engineer (DAE) in Architecture trains the students in
                         the formation of free hand drawings, designing and construction of domestic, commercial,
                         educational, religious, recreational and health related buildings.
-                    </p> 
+                    </p>
 
                 </div>
 

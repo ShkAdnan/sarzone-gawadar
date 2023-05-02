@@ -6,7 +6,7 @@
         font-size: 18px !important;
     }
     .hide {
-        display: none; 
+        display: none;
     }
     .read-more-show{
         font-size: 18px;
@@ -804,7 +804,7 @@
                         <li>Computer Applications and Office Manager</li>
                         <li>OBM Repair Technician</li>
                         <li>Civil Drafting and AutoCAD</li>
-                        <li>Surveryer</li>
+                        <li>Surveyor</li>
                         <li>Carpenter</li>
                         <li>Welder</li>
                     </ul>
