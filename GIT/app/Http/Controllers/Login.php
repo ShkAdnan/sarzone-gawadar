@@ -7,9 +7,11 @@ use Illuminate\Http\Request;
 class Login extends Controller
 {
     function getForm(){
+
         return view('admin.logIn');
     }
     function login(Request $req){
+
          //Validation
          $req->validate([
             'email' => 'required|email',

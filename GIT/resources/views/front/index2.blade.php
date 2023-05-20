@@ -50,7 +50,41 @@
     .text-style {
         color: #02606e;
     }
+    .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
 
+/* Modal content styles */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Close button styles */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 </style>
 
 @section('content')
@@ -66,7 +100,15 @@
         </div>
     </div>
 
+<!-- Modal container -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <p>Static data to display in modal</p>
+    </div>
+  </div>
 
+  <!-- Button to trigger modal -->
+  <button id="myBtn">Open Modal</button>
     <div class="container">
         <div class="row">
             <div class="col-12 text_align_center pt-4" style="text-align: justify">
@@ -430,5 +472,29 @@
             $("#successS2").hide()
 
         })
+
+        // Get the modal container and button to trigger it
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+
+// When the user clicks the button, display the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+// Note that this is just an example, and you may need to adjust the code to fit your specific requirements.
+
+
+
+
+
+
+
     </script>
 @endsection
