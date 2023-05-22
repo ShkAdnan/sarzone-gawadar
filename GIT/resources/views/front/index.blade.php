@@ -355,7 +355,7 @@
                 <div class="col-lg-12 text-center">
 
                         <h1>Our Courses</h1>
-                        
+
                 </div>
 
             </div>

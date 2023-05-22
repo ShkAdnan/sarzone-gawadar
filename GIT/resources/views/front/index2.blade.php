@@ -328,7 +328,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12 my-2">
                     <a href="{{ route('gallery.album', [$album->album_id]) }}">
                         <div class="bg-gallery"
-                            style="background-image: url({{ 'upload/GIT_albums/'.$album->album_coverImage }})">
+                            style="background-image: url({{'upload/GIT_albums/'.$album->album_coverImage }})">
                             <div class="gallery-details-overlay">
                                 <h4 class="text-white">
                                     {{ $album->album_title }}

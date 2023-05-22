@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\album;
 use App\Models\albums_subImage;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 class galleryController extends Controller
 {
@@ -12,6 +13,9 @@ class galleryController extends Controller
         return view('admin.add_album');
     }
     function store(Request $req){
+        if(!File::isDirectory(public_path('upload/GIT_albums/'))){
+            File::makeDirectory(public_path('upload/GIT_albums/'), 0777, true, true);
+          }
 
         $req->validate([
             'album_title'=> 'required | min:4',
