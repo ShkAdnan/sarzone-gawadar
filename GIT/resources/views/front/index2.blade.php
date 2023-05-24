@@ -177,9 +177,9 @@
                         </div>
                         <div class="col-md-6" id="successS2">
                             <div class="full text_align_center">
-                                <iframe width="100%" height="315" style="border-radius: 10px;"
-                                    src="https://youtu.be/2tYNv_W4Wvk" title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/2tYNv_W4Wvk"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowfullscreen></iframe>
                             </div>
                         </div>
